@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AccessoriesController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,12 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 // Main URL
 Route::get('/', function () {
-    return view('Home.home');
+    return view('home.index');
 });
 
-// Home Page URL
-Route::get('/home', function () {
-    return view('Home.home');
-});
+// Home Page
+Route::resource('/home', HomeController::class);
+
+
+// Accessories Page
+Route::resource('/accessories', AccessoriesController::class);
 
 

@@ -2,7 +2,7 @@
 
 @section('title', 'Home Page');
 
-@section('MainContentContainer')
+@section('Maincontent')
 <div class="content">
     <div class="container-fluid">
 
@@ -434,10 +434,10 @@
       </div>
     </div>
   </div>
-@endsection
 
-@section('bestProSlider')
-    <!-- best Pro Slider -->
+{{-- --------------------------------------------------------------------- --}}
+
+  <!-- best Pro Slider -->
   <section class=" wow bounceInUp animated">
     <div class="best-pro slider-items-products container">
       <div class="new_title">
@@ -706,12 +706,10 @@
       </div>
     </div>
   </section>
-@endsection
 
-
-@section('latestBlog')
-    <!-- Home Lastest Blog Block -->
-  <div class="latest-blog wow bounceInUp animated animated container">
+  {{-- ------------------------------------------------------}}
+   <!-- Home Lastest Blog Block -->
+   <div class="latest-blog wow bounceInUp animated animated container">
     <!--exclude For version 6 -->
     <div class="blog-home-inner">
       <div class="blog-title">

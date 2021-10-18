@@ -43,10 +43,20 @@
                   <!-- END For version 1,2,3,4,6 -->
                 </div>
                  <h3>My Acount</h3>
+                 @guest
                 <ul class="links">
-                  <li><a href="login.html" title="My Account">Login</a></li>
-                  <li><a href="login.html" title="Wishlist">Register</a></li>
-                  </ul>
+                  <li><a href="{{ route('login') }}" title="My Account">Login</a></li>
+                  <li><a href="{{ route('register') }}" title="Wishlist">Register</a></li>
+                </ul>
+                @else
+                <a class="p-2 text-dark" href="{{ route('logout') }}"
+                onclick="event.preventDefault();document.getElementById('logout-form').submit();"
+            >Logout ({{ Auth::user()->name }})</a>
+
+            <form id="logout-form" action={{ route('logout') }} method="POST" style="display: none;">
+                @csrf
+            </form>
+                  @endguest
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AccessoriesController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,5 +27,8 @@ Route::resource('/home', HomeController::class);
 
 // Accessories Page
 Route::resource('/accessories', AccessoriesController::class);
+
+// For registration and all necessary authentication of form
+Auth::routes();
 
 

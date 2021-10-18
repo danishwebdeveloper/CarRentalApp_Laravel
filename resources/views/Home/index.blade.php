@@ -5,7 +5,6 @@
 @section('Maincontent')
 <div class="content">
     <div class="container-fluid">
-
       <div class="row">
         <!-- Slider -->
         <div class="home-slider5">

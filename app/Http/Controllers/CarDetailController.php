@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\cardetail as ModelsCardetail;
-use App\Models\Home;
+use App\Models\CarDetail;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class CarDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,18 +14,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // $car = cardetail::all();
-        // dd($car);
-
-
-        $carsdetail = ModelsCardetail::all();
-        // dd($carsdetail);
-    //     return view('Home.index',
-    //     [
-    //         'cardetails' => ModelsCardetail::all()
-    //     ]
-    // );
-        return view('Home.index', compact('carsdetail'));
+        // $carsdetails = new CarDetail();
+        // $carsdetails = CarDetail::all();
+        // // dd($carsdetail);
+        // return view('Home.index', compact('carsdetails'));
     }
 
     /**
@@ -53,10 +44,10 @@ class HomeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Home $home)
+    public function show($id)
     {
         //
     }
@@ -64,10 +55,10 @@ class HomeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Home $home)
+    public function edit($id)
     {
         //
     }
@@ -76,10 +67,10 @@ class HomeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Home $home)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -87,10 +78,10 @@ class HomeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Home $home)
+    public function destroy($id)
     {
         //
     }

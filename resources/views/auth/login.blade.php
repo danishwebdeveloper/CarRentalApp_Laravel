@@ -35,15 +35,8 @@
 
                     <p>By creating an account with our car rental app, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
                      <div class="buttons-set">
-                    {{--  <button type="button" title="Create an Account" class="button create-account" onClick=""><span><span>Create an Account</span></span></button>  --}}
-                </div>
-                </div>
-                <div class="content">
-
-                    <p>By creating an account with our car rental app, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-                     <div class="buttons-set">
-                    {{--  <button type="button" title="Create an Account" class="button create-account" onClick=""><span><span>Create an Account</span></span></button>  --}}
-                </div>
+                         <a class="button create-account" href="{{ route('register') }}">Create an Account</a>
+                     </div>
                 </div>
             </div>
             <div class="col-2 registered-users">
@@ -72,12 +65,19 @@
                             @endif
                             </div>
                         </li>
-                        <div class="col-md-3">
+                        <li>
+                            <div class="input-box">
+                            <label> Remeber Me </label>
+                                <input type="checkbox" class="{{ $errors->has('password') ? 'is-invalid' : '' }}" name="remember"
+                                value="{{ old('remember') ? 'checked' : '' }}"/>
+                            </div>
+                        </li>
+                        {{-- <div class="input-box">
                             <div class="col-md-2 form-group">
                                 <input type="checkbox" class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}" name="remember"
                                 value="{{ old('remember') ? 'checked' : '' }}"/> <label>Remeber Me</label>
                             </div>
-                        </div>
+                        </div> --}}
                         </ul>
 
 
@@ -88,7 +88,6 @@
             </div> <!--col-2 registered-users-->
                    </fieldset> <!--col2-set-->
     </form>
-
 </div> <!--account-login-->
 
 	       </div><!--main-container-->

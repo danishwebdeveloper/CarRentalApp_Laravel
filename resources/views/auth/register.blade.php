@@ -107,6 +107,7 @@
 
 <div class="buttons-set">
     <button type="submit" class="button login" title="Login" name="send" id="send2"><span>SignUP</span></button>
+
         </div> <!--buttons-set-->
         </div> <!--content-->
         </div> <!--col-2 registered-users-->

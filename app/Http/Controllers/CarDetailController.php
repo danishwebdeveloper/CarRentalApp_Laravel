@@ -14,10 +14,7 @@ class CarDetailController extends Controller
      */
     public function index()
     {
-        // $carsdetails = new CarDetail();
-        // $carsdetails = CarDetail::all();
-        // // dd($carsdetail);
-        // return view('Home.index', compact('carsdetails'));
+        return view('Home.CarDetails');
     }
 
     /**

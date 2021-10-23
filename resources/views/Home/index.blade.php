@@ -144,7 +144,7 @@
                 @foreach ($carsdetail as $carsdetails)
               <div class="item-inner">
                 <div class="item-img">
-                  <div class="item-img-info"><a href="accessories-detail.html" title="Retis lapen casen" class="product-image">
+                  <div class="item-img-info"><a href="{{ route('cardetails.index') }}" title="Retis lapen casen" class="product-image">
 
                     {{--  PRODUCT IMAGE --}}
                     <img src="products-images/p1.jpg" alt="Retis lapen casen"></a>
@@ -251,7 +251,11 @@
           <div class="item">
             <div class="item-inner">
               <div class="item-img">
-                <div class="item-img-info"><a href="accessories-detail.html" title="Retis lapen casen" class="product-image"><img src="products-images/p13.jpg" alt="Retis lapen casen"></a>
+                <div class="item-img-info">
+                    {{--  Detail  --}}
+                    <a href="{{ route('cardetails.index') }}" title="Retis lapen casen" class="product-image">
+                        <img src="products-images/p13.jpg" alt="Retis lapen casen">
+                    </a>
                   <div class="new-label new-top-left">Hot</div>
                   <div class="sale-label sale-top-left">-15%</div>
                   <div class="item-box-hover">
@@ -265,9 +269,10 @@
                   </div>
                 </div>
               </div>
-              <div class="item-info">
+              <div class="item-info"></div>
                 <div class="info-inner">
-                  <div class="item-title"><a href="accessories-detail.html" title="Retis lapen casen">{{ $carsdetails->title }}</a> </div>
+                  <div class="item-title">
+                      <a href="{{ route('cardetails.index') }}" title="Retis lapen casen">{{ $carsdetails->title }}</a> </div>
                   <div class="item-content">
                     <div class="rating">
                       <div class="ratings">

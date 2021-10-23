@@ -15,8 +15,7 @@ class HomeTest extends TestCase
      */
     public function test_Home()
     {
-        $response = $this->get('/');
-
+        $response = $this->get('/home');
         $response->assertSeeText('Mr. Danish: +49 176 57682630');
     }
 

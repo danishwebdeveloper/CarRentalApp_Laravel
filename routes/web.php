@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccessoriesController;
+use App\Http\Controllers\CarDetailController;
 use App\Http\Controllers\CarDetailsController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +35,6 @@ Auth::routes();
 
 
 // For Car Details
-Route::resource('/cardetails', CarDetailsController::class);
+Route::resource('/cardetails', CarDetailController::class);
 
 

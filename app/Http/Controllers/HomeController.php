@@ -20,7 +20,7 @@ class HomeController extends Controller
 
 
         $carsdetail = ModelsCardetail::all();
-        // dd($carsdetail);
+    //      dd($carsdetail);
     //     return view('Home.index',
     //     [
     //         'cardetails' => ModelsCardetail::all()

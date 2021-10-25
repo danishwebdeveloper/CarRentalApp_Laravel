@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $cardetail = $this->call(
             [
                 CarDetailTableSeeder::class,
+                UserTableSeeder::class,
             ]
         );
     }

@@ -138,17 +138,17 @@
             <div class="countbox_1 timer-grid"></div>
           </div>
         </div>
+
+
         <div id="hot_deals" class="product-flexslider hidden-buttons">
           <div class="slider-items slider-width-col4 products-grid">
+            @foreach ($carsdetail as $carsdetails)
             <div class="item">
-                @foreach ($carsdetail as $carsdetails)
               <div class="item-inner">
                 <div class="item-img">
                   <div class="item-img-info"><a href="{{ route('cardetails.index') }}" title="Retis lapen casen" class="product-image">
-
                     {{--  PRODUCT IMAGE --}}
                     <img src="products-images/p1.jpg" alt="Retis lapen casen"></a>
-
                     <div class="new-label new-top-left">Used</div>
                     <div class="sale-label sale-top-left">-15%</div>
                     <div class="item-box-hover">
@@ -199,9 +199,11 @@
               </div>
 
             </div>
+            @endforeach
             <!-- End Item -->
           </div>
         </div>
+
       </div>
     </section>
 
@@ -253,7 +255,7 @@
               <div class="item-img">
                 <div class="item-img-info">
                     {{--  Detail  --}}
-                    <a href="{{ route('cardetails.index') }}" title="Retis lapen casen" class="product-image">
+                    <a href="" title="Retis lapen casen" class="product-image">
                         <img src="products-images/p13.jpg" alt="Retis lapen casen">
                     </a>
                   <div class="new-label new-top-left">Hot</div>
@@ -272,7 +274,7 @@
               <div class="item-info"></div>
                 <div class="info-inner">
                   <div class="item-title">
-                      <a href="{{ route('cardetails.index') }}" title="Retis lapen casen">{{ $carsdetails->title }}</a> </div>
+                      <a href="{{ route('cardetails.index') }}" title="Retis lapen casen">{{ 'Car Title' }}</a> </div>
                   <div class="item-content">
                     <div class="rating">
                       <div class="ratings">
@@ -283,12 +285,12 @@
                       </div>
                     </div>
                     <div class="item-price">
-                      <div class="price-box"><span class="regular-price"><span class="price">${{ $carsdetails->price }}</span> </span> </div>
+                      <div class="price-box"><span class="regular-price"><span class="price">$9999.00</span> </span> </div>
                     </div>
                     <div class="other-info">
-                      <div class="col-km"><i class="fa fa-tachometer"></i> {{ $carsdetails->Kilometer }}km</div>
-                      <div class="col-engine"><i class="fa fa-gear"></i> {{  $carsdetails->type }}</div>
-                      <div class="col-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ $carsdetails->model }}</div>
+                      <div class="col-km"><i class="fa fa-tachometer"></i> 4545km</div>
+                      <div class="col-engine"><i class="fa fa-gear"></i> Automatic</div>
+                      <div class="col-date"><i class="fa fa-calendar" aria-hidden="true"></i> 2022 </div>
                     </div>
                   </div>
                 </div>
@@ -301,7 +303,7 @@
       </div>
     </div>
   </section>
-  @endforeach
+
 
   {{-- ------------------------------------------------------}}
    <!-- Home Lastest Blog Block -->

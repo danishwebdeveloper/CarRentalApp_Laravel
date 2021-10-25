@@ -19,9 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Main URL
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::resource('/', HomeController::class);
 
 // Home Page
 Route::resource('/home', HomeController::class);

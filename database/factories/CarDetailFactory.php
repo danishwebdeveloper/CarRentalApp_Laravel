@@ -23,11 +23,12 @@ class CarDetailFactory extends Factory
     {
         return [
             'path' => $this->faker->address(),
-            'title' => $this->faker->sentence(20),
+            'title' => $this->faker->sentence(10),
             'price' => $this->faker->numberBetween(1500, 6000),
             'Kilometer' => $this->faker->randomDigit(),
             'type' => $this->faker->name(),
             'model' => $this->faker->randomDigit(4),
+            'review' => $this->faker->randomDigit(),
         ];
     }
 }

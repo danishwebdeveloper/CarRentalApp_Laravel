@@ -10,6 +10,10 @@ class Home extends Model
 {
     use HasFactory;
 
-
+    public function car(){
+        return $this->belongsTo(CarDetail::class);
+    }
 
 }
+
+

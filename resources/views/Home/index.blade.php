@@ -146,7 +146,7 @@
             <div class="item">
               <div class="item-inner">
                 <div class="item-img">
-                  <div class="item-img-info"><a href="{{ route('cardetails.index') }}" title="Retis lapen casen" class="product-image">
+                  <div class="item-img-info"><a href="{{ route('cardetails.show', ['cardetail' => $carsdetails->id]) }}" title="Retis lapen casen" class="product-image">
                     {{--  PRODUCT IMAGE --}}
                     <img src="products-images/p1.jpg" alt="Retis lapen casen"></a>
                     <div class="new-label new-top-left">Used</div>

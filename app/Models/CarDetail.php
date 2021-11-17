@@ -11,5 +11,9 @@ class CarDetail extends Model
 {
     use HasFactory;
 
-
+    public function title(){
+        return $this->hasMany(Home::class);
+    }
 }
+
+

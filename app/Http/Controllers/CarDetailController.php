@@ -14,7 +14,8 @@ class CarDetailController extends Controller
      */
     public function index()
     {
-        return view('Home.CarDetails');
+        // $nameshow = "Check car details";
+        // return view('Home.CarDetails' ,  compact('nameshow'));
     }
 
     /**
@@ -46,7 +47,8 @@ class CarDetailController extends Controller
      */
     public function show($id)
     {
-        //
+        $AutoDetail = CarDetail::findOrFail($id);
+        return view('Home.CarDetails' , compact('AutoDetail'));
     }
 
     /**

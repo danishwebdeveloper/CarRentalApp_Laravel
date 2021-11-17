@@ -56,9 +56,11 @@ class HomeController extends Controller
      * @param  \App\Models\Home  $home
      * @return \Illuminate\Http\Response
      */
-    public function show(Home $home)
+    public function show($id)
     {
-        //
+        // return view('Home.CarDetails' , ['detail' => ModelsCardetail::with(['title' => function($query){
+        //     return $query->orderBy('created_at', 'DESC');
+        // }])->findOrFail($id)]);
     }
 
     /**

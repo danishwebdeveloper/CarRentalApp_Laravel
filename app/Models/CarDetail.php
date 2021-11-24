@@ -14,6 +14,14 @@ class CarDetail extends Model
     public function title(){
         return $this->hasMany(Home::class);
     }
+
+    // public function review(){
+    //     return $this->hasMany(Home::class);
+    // }
+
+    // public function scopemostReviewedcar(Builder $query){
+    //     return $query->withCount('review')->orderBy('review_count', 'desc');
+    // }
 }
 
 

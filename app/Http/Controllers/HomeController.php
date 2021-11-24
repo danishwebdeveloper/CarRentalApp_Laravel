@@ -15,18 +15,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // $car = cardetail::all();
-        // dd($car);
 
+        // For single route it's good otherwiese use Elequent Query Builder
+        // $carsdetail = ModelsCardetail::all();
+        // return view('Home.index', compact('carsdetail'));
 
-        $carsdetail = ModelsCardetail::all();
-    //      dd($carsdetail);
-    //     return view('Home.index',
-    //     [
-    //         'cardetails' => ModelsCardetail::all()
-    //     ]
-    // );
-        return view('Home.index', compact('carsdetail'));
+        return view('Home.index',
+        [
+            'carsdetail' => ModelsCardetail::all(),
+            'mostreviewedCar' => ModelsCardetail::orderBy('review', 'desc')->take(10)->get(),
+        ]
+        );
+
     }
 
     /**

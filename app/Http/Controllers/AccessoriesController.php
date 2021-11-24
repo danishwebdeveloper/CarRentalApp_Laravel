@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Accessories;
+use App\Models\CarDetail;
 use Illuminate\Http\Request;
 
 class AccessoriesController extends Controller
@@ -14,7 +15,8 @@ class AccessoriesController extends Controller
      */
     public function index()
     {
-        return view('Home.Accessories');
+        // $bestcardetail = CarDetail::all();
+        // return view('Home.Bestaccessoriesdetail', compact('bestcardetail'));
     }
 
     /**

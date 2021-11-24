@@ -50,9 +50,7 @@
               <div class="product-shop col-lg- col-sm-7 col-xs-12">
 
                   <div class="brand">XPERIA</div>
-                  {{--  @foreach ($nameshow as $detail)
 
-                  @endforeach  --}}
                   <div class="product-name">
                     <h1>{{ $AutoDetail->title }}</h1>
                   </div>

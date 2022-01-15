@@ -36,5 +36,3 @@ Auth::routes();
 Route::resource('/cardetails', CarDetailController::class);
 
 
-
-

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Cat Details')
+@section('title', 'Car Detail')
 
 @section('Maincontent')
 
@@ -159,7 +159,6 @@
 <img alt="" src="images/member1.png" class="avatar avatar-60 photo">
 <div class="comment-text">
 
-    @endsection
 {{--  <div class="ratings">
                     <div class="rating-box">
                       <div style="width:100%" class="rating"></div>
@@ -536,4 +535,4 @@
 
 
 
-
+@endsection

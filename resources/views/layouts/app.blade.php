@@ -14,16 +14,16 @@
 <link rel="shortcut icon" href="#" type="image/x-icon">
 
 <!-- CSS Style -->
-<link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/font-awesome.css" media="all">
-<link rel="stylesheet" type="text/css" href="stylesheet/bootstrap-select.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/revslider.css" >
-<link rel="stylesheet" type="text/css" href="stylesheet/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/owl.theme.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/jquery.bxslider.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/jquery.mobile-menu.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/style.css" media="all">
-<link rel="stylesheet" type="text/css" href="stylesheet/responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/stylesheet/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/font-awesome.css" media="all">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/revslider.css" >
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/jquery.mobile-menu.css">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="/public/stylesheet/responsive.css" media="all">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500,600,700,800" rel="stylesheet">

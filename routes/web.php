@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccessoriesController;
+use App\Http\Controllers\AdminAddCarDetailController;
 use App\Http\Controllers\CarDetailController;
 use App\Http\Controllers\CarDetailsController;
 use App\Http\Controllers\HomeController;
@@ -34,5 +35,8 @@ Auth::routes();
 
 // For Car Details
 Route::resource('/cardetails', CarDetailController::class);
+
+// Amdin
+Route::resource('/admin', AdminAddCarDetailController::class );
 
 

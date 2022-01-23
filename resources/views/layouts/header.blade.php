@@ -1,7 +1,7 @@
 <div id="header">
     <div class="header-container">
       <div class="header-logo"> <a href="index-2.html" title="Car HTML" class="logo">
-        <div><img src="images/logo.png" alt="Car Store"></div>
+        <div><img src="{{ asset('images/logo.png') }}" alt="Car Store"></div>
         </a> </div>
       <div class="header__nav">
         <div class="header-banner">
@@ -23,9 +23,9 @@
                   <div class="fl-language">
                   <h3>Language</h3>
                     <ul class="lang">
-                      <li><a href="#"> <img src="images/english.png" alt="English"> <span>English</span> </a></li>
-                      <li><a href="#"> <img src="images/francais.png" alt="French"> <span>French</span> </a></li>
-                      <li><a href="#"> <img src="images/german.png" alt="German"> <span>German</span> </a></li>
+                      <li><a href="#"> <img src="{{ asset('images/english.png') }}" alt="English"> <span>English</span> </a></li>
+                      <li><a href="#"> <img src="{{ asset('images/francais.png') }}" alt="French"> <span>French</span> </a></li>
+                      <li><a href="#"> <img src="{{ asset('images/german.png') }}" alt="German"> <span>German</span> </a></li>
                     </ul>
                   </div>
                   <!--fl-language-->

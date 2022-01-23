@@ -1,5 +1,7 @@
+@extends('layouts.app')
 
-{{-- Styling Issue Need to fix it tomorrow!!--}}
+@section('title', 'Add Auto')
+@section('Maincontent')
 
 <div style="margin: 30px">
 <form action="{{ route('admin.store') }}" method="POST" enctype="multipart/form-data">
@@ -71,5 +73,6 @@
     {!! implode('', $errors->all("<div class='alert alert-danger'>:message</div>")) !!}
 @endif
 
+@endsection
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\CarDetail;
 
 use Illuminate\Http\Request;
@@ -17,7 +18,8 @@ class AdminAddCarDetailController extends Controller
      */
     public function index()
     {
-        return view('Admin.index');
+        $cardetails = CarDetail::latest()->paginate(5);
+        return view('Admin.index', compact('cardetails'));
     }
 
     /**
@@ -41,7 +43,7 @@ class AdminAddCarDetailController extends Controller
         $validation = Validator::make($request->all(), [
             'companyname' => 'required',
             // 'file' => 'required|mimes:png,jpg,jpeg|max:2048',
-            'file' => 'required',
+            'file' => 'required|mimes:jpg,png,jpeg,gif,svg|max:2048',
             'title' => 'required',
             'price' => 'required',
             'kilometer' => 'required',
@@ -56,12 +58,11 @@ class AdminAddCarDetailController extends Controller
 
             $carAdd->companyname = $request->companyname;
             $file = $request->file('file');
-            $filename = time().'_'.$file->getClientOriginalName();
+            $filename = time().'.'. $file->getClientOriginalName();
             $location = 'storage/imagesupload';
             $file->move($location, $filename);
-
-            // $filepath = url('files'.$filename);
-            $carAdd->path = $request->file;
+            // $file = url('files')
+            $carAdd->path = $filename;
             $carAdd->title = $request->title;
             $carAdd->price = $request->price;
             $carAdd->Kilometer = $request->kilometer;
@@ -83,7 +84,9 @@ class AdminAddCarDetailController extends Controller
      */
     public function show($id)
     {
-        //
+        // return ('agyaa idar');
+        $Autos = CarDetail::findorFail($id);
+        return view('Admin.show', compact('Autos'));
     }
 
     /**

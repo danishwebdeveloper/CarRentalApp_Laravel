@@ -6,7 +6,7 @@
           <ul>
             <li>
               <div class="feature-box">
-                <div class="icon-truck"><img src="images/world-icon.png" alt="Image"></div>
+                <div class="icon-truck"><img src="{{ asset('images/world-icon.png') }}" alt="Image"></div>
                 <div class="content">
                   <h6>World's #1</h6>
                   <p>Largest Auto portal</p>
@@ -15,7 +15,7 @@
             </li>
             <li>
               <div class="feature-box">
-                <div class="icon-support"><img src="images/car-sold-icon.png" alt="Image"></div>
+                <div class="icon-support"><img src="{{ asset('images/car-sold-icon.png') }}" alt="Image"></div>
                 <div class="content">
                   <h6>Car Sold</h6>
                   <p>Every 4 minute</p>
@@ -24,7 +24,7 @@
             </li>
             <li>
               <div class="feature-box">
-                <div class="icon-money"><img src="images/tag-icon.png" alt="Image"></div>
+                <div class="icon-money"><img src="{{ asset('images/tag-icon.png') }}" alt="Image"></div>
                 <div class="content">
                   <h6>Offers</h6>
                   <p>Stay updated pay less</p>
@@ -33,7 +33,7 @@
             </li>
             <li class="last">
               <div class="feature-box">
-                <div class="icon-return"><img src="images/compare-icon.png" alt="Image"></div>
+                <div class="icon-return"><img src="{{ asset('images/compare-icon.png') }}" alt="Image"></div>
                 <div class="content">
                   <h6>Compare</h6>
                   <p>Decode the right car</p>

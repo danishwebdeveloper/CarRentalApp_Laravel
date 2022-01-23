@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,16 +13,16 @@
 <link rel="shortcut icon" href="#" type="image/x-icon">
 
 <!-- CSS Style -->
-<link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/font-awesome.css" media="all">
-<link rel="stylesheet" type="text/css" href="stylesheet/bootstrap-select.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/revslider.css" >
-<link rel="stylesheet" type="text/css" href="stylesheet/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/owl.theme.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/jquery.bxslider.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/jquery.mobile-menu.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/style.css" media="all">
-<link rel="stylesheet" type="text/css" href="stylesheet/responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/font-awesome.css') }}" media="all">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/bootstrap-select.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/revslider.css') }}" >
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/owl.carousel.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/owl.theme.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/jquery.bxslider.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/jquery.mobile-menu.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/style.css') }}" media="all">
+<link rel="stylesheet" type="text/css" href="{{ asset('stylesheet/responsive.css') }}" media="all">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">

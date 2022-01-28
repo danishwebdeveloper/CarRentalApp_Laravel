@@ -45,7 +45,7 @@
                     <div class="price-block">
                       <div class="price-box">
 
-                        <p class="special-price"> <span class="price-label">Special Price</span> <span id="product-price-48" class="price">$70,000.00 - $90,000.00 </span> </p>
+                        <p class="special-price"> <span class="price-label">Special Price</span> <span id="product-price-48" class="price">${{ $Autos->price }}</span> </p>
                       </div>
                     </div>
 
@@ -55,7 +55,7 @@
                         <tbody>
                           <tr>
                             <td class="label-spec"> Mileage <span class="coln">:</span></td>
-                            <td class="value-spec"> 17 kmpl </td>
+                            <td class="value-spec"> {{ $Autos->Kilometer }} kmpl </td>
                           </tr>
                           <tr>
                             <td class="label-spec"> Engine Displ. <span class="coln">:</span></td>
@@ -63,7 +63,7 @@
                           </tr>
                           <tr class="odd">
                             <td class="label-spec"> Transmission <span class="coln">:</span></td>
-                            <td class="value-spec"> Automatic </td>
+                            <td class="value-spec"> {{ $Autos->type }} </td>
                           </tr>
                           <tr class="odd">
                             <td class="label-spec"> Fuel Type <span class="coln">:</span></td>
@@ -71,7 +71,7 @@
                           </tr>
                           <tr>
                             <td class="label-spec"> Model <span class="coln">:</span></td>
-                            <td class="value-spec"> 2019 </td>
+                            <td class="value-spec"> {{ $Autos->model }} </td>
                           </tr>
                           <tr>
                             <td class="label-spec"> Power Windows <span class="coln">:</span></td>

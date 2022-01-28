@@ -42,7 +42,6 @@ class AdminAddCarDetailController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'companyname' => 'required',
-            // 'file' => 'required|mimes:png,jpg,jpeg|max:2048',
             'file' => 'required|mimes:jpg,png,jpeg,gif,svg|max:2048',
             'title' => 'required',
             'price' => 'required',
@@ -61,7 +60,7 @@ class AdminAddCarDetailController extends Controller
             $filename = time().'.'. $file->getClientOriginalName();
             $location = 'storage/imagesupload';
             $file->move($location, $filename);
-            // $file = url('files')
+
             $carAdd->path = $filename;
             $carAdd->title = $request->title;
             $carAdd->price = $request->price;
@@ -97,7 +96,8 @@ class AdminAddCarDetailController extends Controller
      */
     public function edit($id)
     {
-        //
+        $editAuto = CarDetail::findorFail($id);
+        return view('Admin.edit', compact('editAuto'));
     }
 
     /**
@@ -109,7 +109,24 @@ class AdminAddCarDetailController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $autoUpdate = CarDetail::findorFail($id);
+        $autoUpdate->companyname = $request->companyname;
+
+        // File
+        $file = $request->file('file');
+        $filename = time().'.'. $file->getClientOriginalName();
+        $location = 'storage/imagesupload';
+        $file->move($location, $filename);
+        $autoUpdate->path =$filename;
+
+        $autoUpdate->title = $request->title;
+        $autoUpdate->price = $request->price;
+        $autoUpdate->Kilometer = $request->kilometer;
+        $autoUpdate->type = $request->type;
+        $autoUpdate->model = $request->modal;
+        $autoUpdate->review = $request->review;
+        $autoUpdate->save();
+        return redirect()->route('admin.index')->with('status', 'Successfully Updated');
     }
 
     /**
@@ -120,6 +137,10 @@ class AdminAddCarDetailController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        $autodel = CarDetail::findorFail($id);
+        $autodel->delete();
+        session()->flash('status', 'Deleted SUccessfully');
+        return redirect()->route('admin.index');
     }
 }

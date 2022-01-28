@@ -76,8 +76,18 @@
                         <td>{{ $cardetail->model }}</td>
                         <td>{{ $cardetail->review }}</td>
 						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+
+							<a href="{{ route('admin.edit', $cardetail->id) }}" class="btn btn-primary" >
+                                EDIT
+                            </a>
+                            <form action="{{ route('admin.destroy', $cardetail->id) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <input type="submit" value="DELETE" class="btn btn-primary"/>
+                            {{-- <a href="{{ route('admin.destroy', $cardetail->id) }}" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i> --}}
+                            </a>
+                        </form>
 						</td>
 					</tr>
                     @endforeach

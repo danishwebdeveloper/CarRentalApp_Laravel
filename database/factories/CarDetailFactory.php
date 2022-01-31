@@ -22,6 +22,7 @@ class CarDetailFactory extends Factory
     public function definition()
     {
         return [
+            'companyname' => $this->faker->name(),
             'path' => $this->faker->address(),
             'title' => $this->faker->sentence(10),
             'price' => $this->faker->numberBetween(1500, 6000),

@@ -14,7 +14,8 @@ class AddCompanynameToCarDetails extends Migration
     public function up()
     {
         Schema::table('car_details', function (Blueprint $table) {
-            $table->text('companyname')->after('id');
+            $table->text('companyname')->default()->after('id');
+            // $table->text('companyname')->after('id');
         });
     }
 

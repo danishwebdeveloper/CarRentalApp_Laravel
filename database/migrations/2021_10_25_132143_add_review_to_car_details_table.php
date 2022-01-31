@@ -14,7 +14,7 @@ class AddReviewToCarDetailsTable extends Migration
     public function up()
     {
         Schema::table('car_details', function (Blueprint $table) {
-            $table->unsignedInteger('review')->index()->after('model');
+            $table->string('review')->default()->after('model');
         });
     }
 

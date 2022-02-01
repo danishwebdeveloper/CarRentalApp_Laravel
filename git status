@@ -1,0 +1,103 @@
+[33mcommit fe346ad5f1c4ccbd7b027095ec1acb375f36b247[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Tue Feb 1 00:47:37 2022 +0100
+
+    Test User & Auto
+
+[33mcommit 78932afacdb27c4cd653226696ae38aa64de3243[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Fri Jan 28 01:21:43 2022 +0100
+
+    Update Auto
+
+[33mcommit e539a2471e9344aee66502bf1f653743db18c9c9[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Sun Jan 23 19:42:33 2022 +0100
+
+    Fix CSS & Add/Display Auto
+
+[33mcommit b38f3c5b66d417b5e24fd8ae4cdd04425ddf434d[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Thu Jan 20 02:12:17 2022 +0100
+
+    Autos by Admin & Validations
+
+[33mcommit 4f22082ffbc6c88fa4150513b60078be82ba5a2c[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Sat Jan 15 17:42:56 2022 +0100
+
+    Revert "Fix Blade"
+    
+    This reverts commit 3f86bc95a8943eb6122c7753e5135ad13302bd99.
+
+[33mcommit 3f86bc95a8943eb6122c7753e5135ad13302bd99[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Sat Jan 15 16:56:31 2022 +0100
+
+    Fix Blade
+
+[33mcommit 524471eca9af1661b0171df6c70ed8b518c565a6[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Wed Nov 24 05:38:39 2021 +0100
+
+    Best Seller Auto | Review Based
+
+[33mcommit db06fe5ce9a9cf3fcd20c1c60a7442f986f70b67[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Wed Nov 17 02:20:40 2021 +0100
+
+    Show Car Detail
+
+[33mcommit 9f07cf8de227788e66fe5d784a028b963de11120[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Mon Oct 25 17:58:48 2021 +0200
+
+    User Table Factory & Seeder | Home Page Add Review
+
+[33mcommit 64717343253c7187aa59dd94ec5074daa20e73a0[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Mon Oct 25 13:34:02 2021 +0200
+
+    Factory | Seeder of CarDetails
+
+[33mcommit c4942ed02fb6cb7ed504035af3c588b0a9f8f36b[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Sun Oct 24 01:46:42 2021 +0200
+
+    Car Detail
+
+[33mcommit c56158b4eb8489801f72f8f0900df5af2337e45c[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Thu Oct 21 18:45:36 2021 +0200
+
+    Cars Details | Fetch | Migrations | Testing
+
+[33mcommit 086aad455bf139822636ff9686b0f8e8445d5836[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Mon Oct 18 15:58:44 2021 +0200
+
+    User Registration | Login
+
+[33mcommit 53749da46bcc32b4c601ecdd655b609d1eb46618[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Mon Oct 18 01:06:59 2021 +0200
+
+    Home | Accessories
+
+[33mcommit 20969d44e973ff2333f6034fe85f6ab0e3b310b8[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Sat Oct 16 23:01:00 2021 +0200
+
+    Home Page | Laravel Mix
+
+[33mcommit 61bc45008d60c3ecff50ca491725424bd6cc6d93[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Fri Oct 15 23:52:21 2021 +0200
+
+    Initial Setup
+
+[33mcommit 28f4a8343d0b1bfb20a80983c63a28c853f82fa6[m
+Author: MuhammadDanish <danishbutt.uos@gmail.com>
+Date:   Fri Oct 15 23:51:17 2021 +0200
+
+    Initial Setup

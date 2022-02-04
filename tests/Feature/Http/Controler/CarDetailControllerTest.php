@@ -1,30 +1,55 @@
 <?php
 
-namespace Tests\Feature\Http\Controler;
+namespace Tests\Unit\UserTest;
 
-use App\Models\CarDetail;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class CarDetailControllerTest extends TestCase
+class UserTest extends TestCase
 {
-    // becasue make a new database and then test ovber there
     use RefreshDatabase;
-
-    public function test_the_cardetail_page_is_redered_properly()
+    public function test_user_duplication()
     {
+        $this->withExceptionHandling();
 
+        //
+        $user1 = User::make([
+            'name' => 'Dr. Freeda Lubowitz DDS',
+            'email' => 'aschiller@gmail.com',
+        ]);
+
+        $user2 = User::make([
+            'name' => 'Kennedy Rolfson',
+            'email' => 'harber.lavada@example.net',
+        ]);
+
+        $this->assertTrue($user1->name != $user2->name);
+        $this->assertTrue($user1->email != $user2->email);
+    }
+
+    public function test_user_delete()
+    {
         $this->withoutExceptionHandling();
 
-        // we want to create a cars
-        $auto = CarDetail::factory()->create();
+        // If user exist then delete it and test on it
+        $user = User::first();
+        if($user){
+            $user->delete();
+        }
 
-        // we want to hit the car url
-        $response = $this->get(url('/cardetails'));
+        $this->assertTrue(true);
+    }
 
-        // we want to assert that we got a status of 200
-        $response->assertStatus(200);
-
+    // HTTP TESTING
+    public function test_store_new_user()
+    {
+        $response = $this->post('/register',[
+            'name' => 'Dr Peter',
+            'email' => 'peterbell@gmail.com',
+            'email_verified' => 'peterbell@gmail.com',
+            'password' => 'selly123456',
+        ]);
+        $response->assertRedirect('/');
     }
 }

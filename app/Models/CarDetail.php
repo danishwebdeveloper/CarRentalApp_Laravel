@@ -10,6 +10,10 @@ use Illuminate\Database\Query\Builder;
 class CarDetail extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'path'
+    ];
 
     public function title(){
         return $this->hasMany(Home::class);

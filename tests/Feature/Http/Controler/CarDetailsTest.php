@@ -33,6 +33,7 @@ class CarDetailsTest extends TestCase
             'Kilometer' => '100',
             'type' => 'manual',
             'model' => '2018',
+            'review' => '2',
         ]);
         $response->assertRedirect('/');
     }

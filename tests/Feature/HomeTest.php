@@ -8,11 +8,7 @@ use Tests\TestCase;
 
 class HomeTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
+    // This is a home test for git
     public function test_Home()
     {
         $response = $this->get('/home');

@@ -42,7 +42,7 @@ class UserTest extends TestCase
     }
 
     // HTTP TESTING
-    public function test_store_new_user()
+    public function test_post_new_user_by_admin()
     {
         $response = $this->post('/register',[
             'name' => 'Dr Peter',
